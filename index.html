@@ -12,10 +12,9 @@
         <span>Focin.ho🐾</span>
       </div>
       <nav>
-        <a href="#missao" class="header" id="missao"> Missão</a>
-        <a href="#adotar" class="header" id="adotar"> Adotar</a>
-        <a href="#ajude" class="header" id="ajude"> Ajude</a>
-        <a href="#denuncie" class="header" id="denuncie">Denuncie</a>
+        <a href="#missao" class="header"> Missão</a>
+        <a href="#servicos" class="header"> Serviços</a>
+        <a href="#contato" class="header"> Contato</a>
       </nav>
       <div class="social">
         <div class="icons">
@@ -28,6 +27,8 @@
     <main>
       <div id="divImg">
         <img src="img/Focin.ho.png" alt="Todo cachorro merece um lar feliz" />
+        <img id="petDestaque" src="img/dog-Photoroom.png" alt="Cachorro feliz" />
+    
       </div>
       <section id="missao">
         <div id="mainMissao">
@@ -58,18 +59,65 @@
               dias.
             </p>
             <span>🐾</span>
+            <div id="indicadores">
+              <div class="indicador">
+                <strong>500+</strong>
+                <p>pets atendidos</p>
+              </div>
+              <div class="indicador">
+                <strong>5</strong>
+                <p>anos de experiência</p>
+              </div>
+              <div class="indicador">
+                <strong>20+</strong>
+                <p>produtos disponíveis</p>
+              </div>
+            </div>
           </div>
           <div id="section2">
             <img src="img/Cachorro triste.png" alt="" />
           </div>
         </div>
       </section>
-      <section id="adotar">
-        <div id="animais">
-              
-        </div>
 
+      <section id="servicos">
+        <h1>Nossos serviços</h1>
+        <div id="cardsServicos">
+          <div class="card">
+            <div class="cardImg"><span>🛁</span></div>
+            <h3>Banho e Tosa</h3>
+            <p>Higiene completa com produtos próprios para cada tipo de pelo.</p>
+          </div>
+          <div class="card">
+            <div class="cardImg"><span>🩺</span></div>
+            <h3>Consultas</h3>
+            <p>Acompanhamento veterinário para manter a saúde em dia.</p>
+          </div>
+          <div class="card">
+            <div class="cardImg"><span>🛒</span></div>
+            <h3>Produtos</h3>
+            <p>Ração, brinquedos e acessórios selecionados com carinho.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <h1>Fale com a gente</h1>
+        <form id="formContato">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+          <p id="msgForm"></p>
+        </form>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
